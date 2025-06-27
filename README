@@ -1,0 +1,71 @@
+Programmieren: Projektsetup „Das 2D-Spielbrett und die Spielfigur“
+Gehe jeden Schritt durch und implementiere jeweils nur den aktuellen Schritt des TDD-Zyklus!
+Deine Aufgabe ist es, ein einfaches 2D-Spielbrett und eine Spielfigur zu entwickeln. Das Spielfeld ist ein Raster, auf dem du dich mit den Tasten W (hoch), S (runter), D (rechts) und A (links) bewegen kannst. Schreibe Tests, um sicherzustellen, dass sich die Spielfigur korrekt auf dem Spielfeld bewegt.
+
+Programmieren: Ersten Test schreiben (getX)
+Im ersten Schritt sollst du keinen Produktionscode in src/main/java schreiben, sondern nur Tests in src/test/java.
+
+Schreibe einen Test, der sicherstellt, dass die Methode getX in der Klasse PlayerCharacter den Wert 0 zurückgibt.
+Die Spielfigur sollte zu Beginn immer in der Mitte des Spielfeldes positioniert sein.
+Führe den Test aus – er sollte jetzt rot sein (Kompilierungsfehler, nicht ausführbar).
+Grund:
+
+Die Klasse PlayerCharacter existiert noch nicht.
+Die Methode getX existiert noch nicht.
+Es wurde noch nichts implementiert.
+Programmieren: Minimale Implementierung
+Implementiere nun die Klasse PlayerCharacter und die Methode getX.
+Führe den Test aus – er sollte jetzt grün sein.
+Committe und pushe deine Änderungen.
+Programmieren: Refactoring?
+Wahrscheinlich gibt es an diesem Punkt noch keine Optimierungsmöglichkeiten. Falls doch, führe sie durch und pushe die Änderungen.
+
+Programmieren: Zweiter Test (getY)
+Schreibe einen zweiten Test, der überprüft, ob die Methode getY den Wert 0 zurückgibt.
+Führe den Test aus – er sollte jetzt rot sein.
+Programmieren: Zweite minimale Implementierung
+Implementiere nun die Methode getY, sodass der Test bestanden wird.
+Programmieren: Dritter Test (move W)
+Schreibe einen Test, der überprüft, ob die Methode move("W") die Spielfigur um eine Position nach oben bewegt.
+Die Methode sollte ein Array [0,1] ([x,y]) zurückgeben.
+Noch keine Änderungen in src/main/java vornehmen!
+Programmieren: Dritte minimale Implementierung (move W)
+Implementiere nun die move-Methode, sodass der Test bestanden wird.
+Committe und pushe deine Änderungen.
+Programmieren: Zusätzliche Tests und Implementierungen
+Folge weiter strikt dem TDD-Zyklus:
+
+Schreibe einen einzelnen Test
+Stelle sicher, dass der Test fehlschlägt
+Implementiere minimalen Code, um den Test zu bestehen
+Committe und pushe den Code
+Falls möglich, Refactoring durchführen und ggf. erneut committen
+Implementiere nacheinander folgende Bewegungen:
+
+move S (runter)
+move D (rechts)
+move A (links)
+⚠ Achtung:
+Alle Tests verwenden dieselben x- und y-Werte, was zu Fehlern führen kann.
+Nutze @BeforeEach, um vor jedem Test die Werte auf 0 zurückzusetzen.
+
+Bonus: Fibonacci
+Implementiere eine Methode zur Berechnung der n-ten Fibonacci-Zahl mithilfe von TDD:
+
+Die Fibonacci-Folge beginnt mit 0, 1 und setzt sich fort mit 1, 2, 3, 5, 8, 13, 21, …
+Schreibe zuerst einen Test für die Fibonacci-Methode (z. B. n=0 oder n=1).
+Implementiere die Funktion so, dass der erste Test bestanden wird.
+Schreibe zusätzliche Tests für verschiedene Fälle.
+Optimiere die Implementierung, sodass alle Tests erfolgreich sind.
+Teilt euch die Aufgaben auf und postet euer GitHub-Repository mit der Lösung!
+
+Bonus: Negative und Gleitkommazahlen
+Falls du noch Zeit hast: Implementiere eine Fibonacci-Funktion, die negative und Gleitkommazahlen berücksichtigt.
+
+Bonus: Codewars
+Codewars ist eine großartige Plattform für algorithmische Herausforderungen.
+
+Einer von euch sollte ein Konto auf Codewars erstellen.
+Wählt gemeinsam eine einfache Java-Aufgabe.
+Löst die Aufgabe nach dem TDD-Prinzip.
+Tretet unserem Clan @neuefische bei, um euch mit anderen Teilnehmern zu messen! 🚀
