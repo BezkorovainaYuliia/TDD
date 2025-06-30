@@ -19,4 +19,13 @@ class PlayerCharacterTest {
         assertEquals(expectedY, PlayerCharacter.getY());
     }
 
+    @Test
+    void moveW()
+    {
+        int [] moveWX = new int[2];
+        moveWX[0] = 0;
+        moveWX[1] = 1;
+        assertArrayEquals(moveWX, PlayerCharacter.moveW());
+    }
+
 }
