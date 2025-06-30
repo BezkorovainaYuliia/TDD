@@ -1,10 +1,9 @@
 package org.example;
 
 public class Fibonacci {
-public static int Fibonacci(int x) {
+public static int fibonacciFunc(int x) {
     if (x <= 1) { return x;}
-    int vorLetzteFib = 1;
-    if (x >= 2) {
+     if (x >= 2) {
         return fibonacci(x);
     }
     return 0;
