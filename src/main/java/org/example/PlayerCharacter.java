@@ -27,4 +27,13 @@ public class PlayerCharacter {
         System.out.println(moveX[0] + " " + moveX[1]);
         return moveX;
     }
+    public static int[] moveD(){
+        y++;
+        x++;
+        int [] moveX = new int[2];
+        moveX[0] = x;
+        moveX[1] = y;
+        System.out.println(moveX[0] + " " + moveX[1]);
+        return moveX;
+    }
 }

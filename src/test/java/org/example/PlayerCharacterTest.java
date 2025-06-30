@@ -41,4 +41,15 @@ class PlayerCharacterTest {
         assertArrayEquals(moveX, PlayerCharacter.moveS());
     }
 
+    @Test
+    void moveD()
+    {
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
+        int [] moveX = new int[2];
+        moveX[0] = 1;
+        moveX[1] = 1;
+        assertArrayEquals(moveX, PlayerCharacter.moveD());
+    }
+
 }
