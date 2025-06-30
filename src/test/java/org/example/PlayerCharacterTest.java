@@ -22,10 +22,23 @@ class PlayerCharacterTest {
     @Test
     void moveW()
     {
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
         int [] moveWX = new int[2];
         moveWX[0] = 0;
         moveWX[1] = 1;
         assertArrayEquals(moveWX, PlayerCharacter.moveW());
+    }
+
+    @Test
+    void moveS()
+    {
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
+        int [] moveX = new int[2];
+        moveX[0] = 0;
+        moveX[1] = -1;
+        assertArrayEquals(moveX, PlayerCharacter.moveS());
     }
 
 }
