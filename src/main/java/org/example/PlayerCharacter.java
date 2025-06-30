@@ -1,8 +1,8 @@
 package org.example;
 
 public class PlayerCharacter {
-    public static int x = 0;
-    public static int y = 0;
+    public static int x;
+    public static int y;
 
     public static int getX(){
         return x;

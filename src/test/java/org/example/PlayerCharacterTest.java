@@ -1,14 +1,20 @@
 package org.example;
 
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
 class PlayerCharacterTest {
+    @BeforeEach
+    void setUpXundY() {
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
+    }
+
     @Test
     void isPositionXZero()
     {
-        PlayerCharacter.x = 0;
         int expectedX = 0;
         assertEquals(expectedX, PlayerCharacter.getX());
     }
@@ -16,7 +22,6 @@ class PlayerCharacterTest {
     @Test
     void isPositionYZero()
     {
-        PlayerCharacter.y = 0;
         int expectedY = 0;
         assertEquals(expectedY, PlayerCharacter.getY());
     }
@@ -24,10 +29,7 @@ class PlayerCharacterTest {
     @Test
     void moveW()
     {
-        PlayerCharacter.x = 0;
-        PlayerCharacter.y = 0;
         int [] moveWX = new int[2];
-        moveWX[0] = 0;
         moveWX[1] = 1;
         assertArrayEquals(moveWX, PlayerCharacter.moveW());
     }
@@ -35,34 +37,27 @@ class PlayerCharacterTest {
     @Test
     void moveS()
     {
-        PlayerCharacter.x = 0;
-        PlayerCharacter.y = 0;
-        int [] moveX = new int[2];
-        moveX[0] = 0;
-        moveX[1] = -1;
-        assertArrayEquals(moveX, PlayerCharacter.moveS());
+        int [] moveY = new int[2];
+        moveY[1] = -1;
+        assertArrayEquals(moveY, PlayerCharacter.moveS());
     }
 
     @Test
     void moveD()
     {
-        PlayerCharacter.x = 0;
-        PlayerCharacter.y = 0;
-        int [] moveX = new int[2];
-        moveX[0] = 1;
-        moveX[1] = 1;
-        assertArrayEquals(moveX, PlayerCharacter.moveD());
+        int [] moveXY = new int[2];
+        moveXY[0] = 1;
+        moveXY[1] = 1;
+        assertArrayEquals(moveXY, PlayerCharacter.moveD());
     }
 
     @Test
     void moveA()
     {
-        PlayerCharacter.x = 0;
-        PlayerCharacter.y = 0;
-        int [] moveX = new int[2];
-        moveX[0] = -1;
-        moveX[1] = -1;
-        assertArrayEquals(moveX, PlayerCharacter.moveA());
+        int [] moveXY = new int[2];
+        moveXY[0] = -1;
+        moveXY[1] = -1;
+        assertArrayEquals(moveXY, PlayerCharacter.moveA());
     }
 
 }
