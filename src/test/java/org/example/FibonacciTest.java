@@ -14,9 +14,17 @@ class FibonacciTest {
     }
 
     @Test
-    void Fibonachi0() {
+    void Fibonachi1() {
         int expected = 1;
         int actual = Fibonacci.Fibonacci(1);
+        assertEquals(expected, actual);
+
+    }
+
+    @Test
+    void Fibonachi2() {
+        int expected = 1;
+        int actual = Fibonacci.Fibonacci(2);
         assertEquals(expected, actual);
 
     }
