@@ -8,6 +8,7 @@ class PlayerCharacterTest {
     @Test
     void isPositionXZero()
     {
+        PlayerCharacter.x = 0;
         int expectedX = 0;
         assertEquals(expectedX, PlayerCharacter.getX());
     }
@@ -15,6 +16,7 @@ class PlayerCharacterTest {
     @Test
     void isPositionYZero()
     {
+        PlayerCharacter.y = 0;
         int expectedY = 0;
         assertEquals(expectedY, PlayerCharacter.getY());
     }
@@ -50,6 +52,17 @@ class PlayerCharacterTest {
         moveX[0] = 1;
         moveX[1] = 1;
         assertArrayEquals(moveX, PlayerCharacter.moveD());
+    }
+
+    @Test
+    void moveA()
+    {
+        PlayerCharacter.x = 0;
+        PlayerCharacter.y = 0;
+        int [] moveX = new int[2];
+        moveX[0] = -1;
+        moveX[1] = -1;
+        assertArrayEquals(moveX, PlayerCharacter.moveA());
     }
 
 }
