@@ -78,7 +78,7 @@ class FibonacciTest {
 
     @Test
     void Fibonachi12() {
-        int expected = 145;//144
+        int expected = 145;
         int actual = Fibonacci.fibonacciFunc(12);
         assertEquals(expected, actual);
 
