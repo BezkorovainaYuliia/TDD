@@ -13,34 +13,22 @@ public class PlayerCharacter {
 
     public static int[] moveW() {
         y++;
-        int [] moveX = new int[2];
-        moveX[0] = x;
-        moveX[1] = y;
-        return moveX;
+        return new int[]{x, y};
     }
 
     public static int[] moveS() {
         y--;
-        int [] moveX = new int[2];
-        moveX[0] = x;
-        moveX[1] = y;
-        return moveX;
+        return new int[]{x, y};
     }
     public static int[] moveD(){
         y++;
         x++;
-        int [] moveX = new int[2];
-        moveX[0] = x;
-        moveX[1] = y;
-        return moveX;
+        return new int[]{x, y};
     }
 
     public static int[] moveA(){
         y--;
         x--;
-        int [] moveX = new int[2];
-        moveX[0] = x;
-        moveX[1] = y;
-        return moveX;
+        return new int[]{x, y};
     }
 }

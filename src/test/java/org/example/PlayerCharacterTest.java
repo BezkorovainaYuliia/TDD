@@ -60,4 +60,14 @@ class PlayerCharacterTest {
         assertArrayEquals(moveXY, PlayerCharacter.moveA());
     }
 
+    @Test
+    void moveAA()
+    {
+        int [] moveXY = new int[2];
+        moveXY[0] = -2;
+        moveXY[1] = -2;
+        PlayerCharacter.moveA();
+        assertArrayEquals(moveXY, PlayerCharacter.moveA());
+    }
+
 }
